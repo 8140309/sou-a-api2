@@ -2,7 +2,7 @@
  module.exports = function(app) {
 	 var controller = require('../controllers/tasksController');
 
-	 app.route('/tasks')
+	 app.route('/api/tasks')
 		 .get(controller.list)
 		 .post(controller.create);
 

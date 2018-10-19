@@ -2,7 +2,7 @@
  module.exports = function(app) {
 	 var controller = require('../controllers/batatasController');
 
-	 app.route('/batatas')
+	 app.route('/api/batatas')
 		 .get(controller.list)
 		 .post(controller.create);
 
